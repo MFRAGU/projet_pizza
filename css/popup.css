@@ -36,7 +36,7 @@
     align-items: center;
 }
 .bi-x{
-    font-size: 40px;
+    font-size: 35px !important;
     background: none;
     border: none;
     color: rgb(50,50,50) !important;
