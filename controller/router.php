@@ -1,5 +1,4 @@
 <?php
-
 require_once("config/connexion.php");
 connexion::connect();
 
@@ -11,7 +10,8 @@ $objets = [
     "client",
     "gestionnaire",
     "stock",
-    "finance"
+    "finance",
+    "paiement"
 ];
 
 $conditionUrlGet = isset($_GET["objet"]) && in_array($_GET["objet"], $objets);
@@ -30,6 +30,9 @@ if ($conditionUrlGet) {
             case "disconnection":
                 $controller::disconnection();
                 break;
+            case "stockPizza":
+                $controller::stockPizza();
+                break;
             default:
                 $controller::displayDefault();
                 break;
@@ -45,6 +48,9 @@ if ($conditionUrlGet) {
                 break;
             case "update":
                 $controller::update();
+            case "insertCartePaiement":
+                $controller::insertCartePaiement();
+                break;
             default:
                 $controller::displayDefault();
                 break;
