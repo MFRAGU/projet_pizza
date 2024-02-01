@@ -73,6 +73,7 @@ class objet{
             echo $e->getMessage();
         }
     }
+    
 
     // public static function delete($id){
     //      $classeRecuperee = static::$classe; 

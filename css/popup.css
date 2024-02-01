@@ -114,6 +114,7 @@
     height: max-content;
     width: max-content;
     min-width: 40%;
+    overflow-y: auto;
 }
 .popup-form{
     flex-grow: 1;
@@ -137,4 +138,8 @@
 }
 .popup-form button:hover{
     background-color: rgb(155, 88, 12);;
+}
+.popup-create-div-checkbox{
+    display: flex;
+    flex-direction: column;
 }

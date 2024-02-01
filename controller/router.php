@@ -30,9 +30,11 @@ if ($conditionUrlGet) {
             case "disconnection":
                 $controller::disconnection();
                 break;
-            case "stockPizza":
-                $controller::stockPizza();
+            case "displayStockPizza":
+                $controller::displayStockPizza();
                 break;
+            case "create":
+                $controller::create();
             default:
                 $controller::displayDefault();
                 break;

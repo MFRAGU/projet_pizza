@@ -15,10 +15,10 @@ class controllerStock extends controllerObjet
 
     public static function displayDefault(){
         if(isset($_SESSION["gestionnaire"])){
-            $classe = static::$classe;
+            $class = static::$classe;
             $identifiant = static::$identifiant;
             $champs = static::$champs;
-            $objects = $classe::getAll();
+            $objects = $class::getAll();
             require_once("view/head.php");
             require_once("view/popup_edit.php");
             require_once("view/navbar.php");
