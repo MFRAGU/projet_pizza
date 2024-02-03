@@ -5,6 +5,9 @@
 @import url("form.css");
 @import url("home_gestionnaire.css");
 @import url("stock.css");
+@import url("stat_Day.css");
+@import url("stat_Month.css");
+@import url("stat_Year.css");
 
 main{
     display: flex;

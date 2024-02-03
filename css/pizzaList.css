@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+<<<<<<< Updated upstream
 .Liste_pizza li {
     border-bottom: 1px solid #eee;
     padding: 10px 0;
@@ -13,12 +14,15 @@
 .Liste_pizza li:hover {
     background-color: #f9f9f9;
 }
+=======
+>>>>>>> Stashed changes
 
 .prixPizza {
     font-size: 1.2em;
     color: #e74c3c; /* A distinct color for the price */
 }
 
+<<<<<<< Updated upstream
 .Liste_pizza a {
     text-decoration: none;
     color: inherit;
@@ -28,6 +32,8 @@
     text-decoration: underline;
 }
 
+=======
+>>>>>>> Stashed changes
 
 .form_ListePizza {
     max-width: 600px;

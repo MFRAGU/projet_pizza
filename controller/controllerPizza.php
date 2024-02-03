@@ -10,7 +10,7 @@
     
         protected static array $champs = array(
             "nom_pizza" =>["text", "Nom de la pizza"],
-            "prix_pizza" =>["numbre", "Prix"]
+            "prix_pizza" =>["number", "Prix"]
         );
 
         public static function displayStockPizza(){

@@ -25,7 +25,7 @@
         <ul>
             <li id="li-account">
                 <a id="nav-icon" href="index.php?objet=<?=$userType?>">
-                    <?=$user?><span class="bi bi-person-fill"></span>
+                   <span class="bi bi-person-fill"></span>
                 </a>
             <?php if(!empty($user)): ?>
                 <ul id="sub-menu-account">

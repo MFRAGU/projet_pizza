@@ -20,10 +20,14 @@ if(isset($_GET[$identifiant])):
                             echo "<label>".$id."</label>";
                         echo "</div>";
                     }
+<<<<<<< Updated upstream:view/popup_edit.php
                     if($isPizzaClass){
                         displayCheckbox($ingredients);
                         displayCheckbox($allergenes);
                     }
+=======
+                
+>>>>>>> Stashed changes:view/popup.php
                 ?>
                 <button type="submit">Enregistrer</button>
             </form>
