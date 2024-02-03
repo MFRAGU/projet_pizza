@@ -7,17 +7,10 @@ $objets = [
     "pizza",
     "dessert",
     "boisson",
-<<<<<<< Updated upstream
-    "client",
-    "gestionnaire",
-    "stock",
-    "finance",
-    "paiement"
-=======
     "commande",
     "client",
-    "gestionnaire"
->>>>>>> Stashed changes
+    "gestionnaire",
+    "statistiques"
 ];
 
 $conditionUrlGet = isset($_GET["objet"]) && in_array($_GET["objet"], $objets);

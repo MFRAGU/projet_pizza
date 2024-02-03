@@ -7,28 +7,7 @@ class controllerCommande extends controllerObjet
     protected static string $classe = "commande";
     protected static string $identifiant = "id_commande";
 
-    protected static array $champs_Day = array(
-        "nb_Commandes" =>["number", "Nombre de commandes"],
-        "total_journalier" =>["number", "Chiffres d'affaire"],
-        "total_moyen" =>["number", "CA moyen"],
-        "date_commande" =>["date", "Date"]
-    );
-
-    protected static array $champs_Month = array(
-        "date_commande" =>["date", "Date"],
-        "mois" =>["number", "Mois"],
-        "nombre_Commandes" =>["number", "Nombre de commandes"],
-        "montant_total_mois" =>["number", "Chiffres d'affaire"],
-        "montant_moyen" =>["number", "CA moyen"]
-    );
-
-    protected static array $champs_Year = array(
-        "année" =>["date", "Année"],
-        "nombre_commandes" =>["number", "Nombre de commandes"],
-        "montant_total_annuel" =>["number", "Chiffres d'affaire"],
-        "montant_moyen" =>["number", "CA moyen"]
-    );
-
+    
     public static function displayDefault(){
        //if(isset($_SESSION["gestionnaire"])){
         require_once("view/head.php");
