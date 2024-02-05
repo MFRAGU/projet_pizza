@@ -47,6 +47,14 @@ class pizza extends objet{
             echo $request;
         }
     }
+
+    public static function getPizzaMoment() {
+        $request = "SELECT nom_pizza, prix_pizza FROM pizza WHERE pizza_du_moment = 1";
+        $result = connexion::pdo()->prepare($request);
+        $result->execute();
+        $pizzaMoment = $result->fetchAll(PDO::FETCH_ASSOC);
+        return $pizzaMoment;
+    }
     public function __toString(): string{
         return strval($this->nom_pizza);
     }

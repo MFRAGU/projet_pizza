@@ -8,7 +8,7 @@ class controllerGestionnaire extends controllerObjet
     protected static string $classe = "gestionnaire";
     protected static string $identifiant = "id_gestionnaire";
 
-    //appele au formulaire
+    //appel au formulaire
     public static function displayDefault()
     {
         if(isset($_SESSION["gestionnaire"])) {

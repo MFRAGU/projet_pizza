@@ -1,5 +1,5 @@
 <?php
-
+require_once("controller/controllerHome.php");
 require_once("config/connexion.php");
 connexion::connect();
 
@@ -52,5 +52,5 @@ if ($conditionUrlGet) {
     }
     else $controller::displayDefault();
 }
-else require_once("view/home.php");
+else controllerHome::showPizzaMoment();
 ?>
