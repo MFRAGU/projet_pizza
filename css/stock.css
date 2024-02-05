@@ -61,9 +61,10 @@
     font-size: 17px!important;
     width: max-content;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 5px!important;
     border: none;
     background: none;
+    color: rgb(30,30,30);
 }
 .bi-arrow-left:hover{
     background-color: rgb(224, 224, 224);

@@ -11,7 +11,9 @@ $objets = [
     "client",
     "gestionnaire",
     "stock",
-    "finance"
+    "finance",
+    "paiement",
+    "statistiques"
 ];
 
 $conditionUrlGet = isset($_GET["objet"]) && in_array($_GET["objet"], $objets);
@@ -30,6 +32,15 @@ if ($conditionUrlGet) {
             case "disconnection":
                 $controller::disconnection();
                 break;
+            case "displayStock":
+                $controller::displayStock();
+                break;
+            case "displayCreateForm":
+                $controller::displayCreateForm();
+                break;
+            case "create":
+                $controller::create();
+                break;
             default:
                 $controller::displayDefault();
                 break;
@@ -45,6 +56,13 @@ if ($conditionUrlGet) {
                 break;
             case "update":
                 $controller::update();
+                break;
+            case "insertCartePaiement":
+                $controller::insertCartePaiement();
+                break;
+            case "create":
+                $controller::create();
+                break;
             default:
                 $controller::displayDefault();
                 break;
