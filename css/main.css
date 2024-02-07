@@ -13,6 +13,6 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color: whitesmoke;
+    background-color: #382112;
     min-height: 65vh;
 }

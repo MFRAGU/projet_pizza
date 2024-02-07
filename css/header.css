@@ -17,9 +17,9 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(30, 30, 30);
+    background-image: linear-gradient(#CF000A, #FE602B);
     box-shadow: 1px 1px 3px grey;
-    padding: 3px 15px;
+    padding: 3px 30px;
 }
 nav ul{
     display: inline-flex;
@@ -36,22 +36,18 @@ nav a{
 .nav-links-products:hover{
     background-color: rgb(184, 103, 12);
 }
-#nav-home{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+
 #img-logo{
     width: 70px;
     height: 70px;
+    border-radius: 10px;
+    background-color: white;
 }
 #links-home{
     padding: 0px!important;
     margin: 0px!important;
 }
-#links-home:hover{
-    background-color: rgb(40, 40, 40);
-}
+
 #nav-icon{
     padding: 0px;
     margin-inline: 20px;
@@ -80,3 +76,47 @@ nav .bi-person-fill{
 .bi-box-arrow-right{
     font-size: 24px;
 }
+
+#pizza_Moment{
+    width: 400px;
+    height: 400px;
+    margin-left: 320px;
+    max-width: 100%;     
+    margin: 20px 0; 
+}
+
+#hot{
+    display: flex;           
+    flex-direction: column;  
+    align-items: center;     
+    text-align: center; 
+    margin-left: 500px;
+    
+}
+
+#nom_pizza {
+    color: #ffffff !important;
+    font-family: 'Georgia', serif !important;
+    font-style: italic;
+    font-size: 4em !important;
+    margin-bottom: 30px;
+  }
+    
+#texte{
+    font-size: 5em;                     
+    font-weight: bold;
+    font-family: 'Georgia', serif !important;
+    font-style: italic !important;
+    margin-top: 40px;
+}
+
+
+
+#prix{
+    color: #ffffff !important;
+    font-size: 2em !important;
+    margin-bottom: 30px;
+}
+
+
+
