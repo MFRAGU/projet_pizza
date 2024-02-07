@@ -13,7 +13,8 @@ $objets = [
     "stock",
     "finance",
     "paiement",
-    "statistiques"
+    "statistiques",
+    "alerte"
 ];
 
 $conditionUrlGet = isset($_GET["objet"]) && in_array($_GET["objet"], $objets);
