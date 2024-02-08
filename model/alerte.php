@@ -1,6 +1,6 @@
 <?php
 
-require_once("alerte.php");
+require_once("objet.php");
 
 class alerte extends objet
 {
@@ -34,10 +34,10 @@ class alerte extends objet
         return strval($this->message_alerte);
     }
 
-    public static function getAll(){
+    public static function getAll($condition = null){
         $requete = "";
-        $requete .= "SELECT message_alerte, date_alerte, nom_stock FROM alerte";
-        $requete .= "NATURAL JOIN stock";
+        $requete .= "SELECT message_alerte, date_alerte, nom_stock FROM alerte ";
+        $requete .= "NATURAL JOIN stock;";
         $resultat = connexion::pdo()->prepare($requete);
         try{
             $resultat->execute();

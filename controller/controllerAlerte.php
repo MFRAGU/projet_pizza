@@ -11,8 +11,12 @@ class controllerAlerte extends controllerObjet{
             $classe = static::$classe;
             $identifiant = static::$identifiant;
             $alertes = $classe::getAll();
+            $title = ucfirst($classe);
+            require_once("view/head.php");
+            require_once("view/navbar.php");
             require_once("view/alerte.php");
-        }else{
+            require_once("view/footer.html");
+        } else{
             header("Location: index.php?objet=gestionnaire");
             exit();
         }
