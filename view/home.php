@@ -1,7 +1,7 @@
 <?php
 include("view/head.php");
 include("view/navbar.php");
-
+echo '<section class="section-home">';
 foreach($pizza_Moment as $pizza){
     ?>
     <div id="hot">
@@ -10,12 +10,8 @@ foreach($pizza_Moment as $pizza){
     echo '<img src="'.$pizza['image_pizza'].'" id="pizza_Moment"/>';
     echo '<h2 id="prix">'.$pizza['prix_pizza']. "€". '</h2>';
     echo '<h1 id="nom_pizza"> '.$pizza['nom_pizza']. '</h1>';
-    
-    
-        ?>
-    
-    <?php
 }
+echo '</section>';
 include("view/footer.html");
 
 

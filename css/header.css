@@ -18,7 +18,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(#CF000A, #FE602B);
-    box-shadow: 1px 1px 3px grey;
+    box-shadow: 1px 1px 3px black;
     padding: 3px 30px;
 }
 nav ul{
@@ -31,10 +31,10 @@ nav ul{
 nav a{
     color: white;
     font-size: 18px;
-    padding: 25.5px 20px;
+    padding: 26px 20px;
 }
 .nav-links-products:hover{
-    background-color: rgb(184, 103, 12);
+    background-color: #EC391E;
 }
 
 #img-logo{
@@ -42,6 +42,9 @@ nav a{
     height: 70px;
     border-radius: 10px;
     background-color: white;
+}
+#img-logo:hover{
+    box-shadow: 2px 2px 2px black;
 }
 #links-home{
     padding: 0px!important;
@@ -77,6 +80,12 @@ nav .bi-person-fill{
     font-size: 24px;
 }
 
+.section-home{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 #pizza_Moment{
     width: 400px;
     height: 400px;
@@ -89,9 +98,7 @@ nav .bi-person-fill{
     display: flex;           
     flex-direction: column;  
     align-items: center;     
-    text-align: center; 
-    margin-left: 500px;
-    
+    text-align: center;
 }
 
 #nom_pizza {
