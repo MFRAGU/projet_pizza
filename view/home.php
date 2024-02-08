@@ -1,4 +1,5 @@
 <?php
+$title = "Pizza Hub";
 include("view/head.php");
 include("view/navbar.php");
 echo '<section class="section-home">';
